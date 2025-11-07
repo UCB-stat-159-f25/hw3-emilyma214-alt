@@ -1,6 +1,13 @@
 import os
+import sys
 import numpy as np
+
+this_dir = os.path.dirname(__file__)
+repo_root = os.path.abspath(os.path.join(this_dir, "..", ".."))
+sys.path.insert(0, repo_root)
+
 from ligotools import readligo as rl
+
 
 
 def test_loaddata_strain_and_time_lengths_match():
