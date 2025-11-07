@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligotools"
+version = "0.1.0"
+description = "Tools for analyzing LIGO gravitational wave data"
+authors = [
+  { name = "LIGO Scientific Collaboration (LSC)" },
+  { name = "Emily Ma" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "h5py",
+  "pytest"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ligotools*"]
