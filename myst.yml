@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 0188df1a-75ca-4d7c-8928-0fc4e1f78dc1
+  title: HW03
+  # description:
+  # keywords: []
+  authors: [Emily Ma]
+  github: https://github.com/UCB-stat-159-f25/hw3-emilyma214-alt
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  title: "HW03 – LIGO"
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
+files:
+  path: content
+
+toc:
+  - file: index.md
+    title: "Home"
+  - file: LOSC_Event_tutorial.ipynb
+    title: "LIGO Tutorial"
